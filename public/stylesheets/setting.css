@@ -1,0 +1,154 @@
+
+
+*:after {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font: 16px/1.2 "Roboto", sans-serif;
+	color: white;
+}
+.blog {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.alink {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+.alink i {
+	width: 20px;
+	font-size: 20px;
+}
+
+/* container */
+.container {
+	width: 300px;
+	height: auto;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: rgba(213, 123, 123, 0.35) 0px 5px 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	overflow: hidden;
+}
+
+/* switch */
+.switch {
+	width: 37px;
+	position: relative;
+}
+.switch input[type="checkbox"] {
+	visibility: hidden;
+}
+.switch input[type="checkbox"]:checked + label {
+	background-color: #f3a978;
+}
+.switch input[type="checkbox"]:checked + label:after {
+	left: 20px;
+}
+.switch label {
+	width: 100%;
+	height: 21px;
+	border-radius: 50px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.switch label:after {
+	content: "";
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	transition: all 0.1s;
+}
+
+/* settings */
+.settings {
+	color: black;
+	background-color: white;
+}
+/* head, body */
+.settings .head,
+.settings .body {
+	padding: 16px 8px;
+}
+.settings .head + .body {
+	border-top: 1px solid #ccc;
+}
+/* head */
+.settings .head {
+	text-align: center;
+	position: relative;
+}
+.settings .photo {
+	font-size: 0;
+}
+.settings .photo img {
+	border-radius: 50%;
+}
+
+
+/* body */
+.settings .body {
+    color: black;
+}
+
+.setting .setting_item {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+}
+.setting .setting_item + .setting_item {
+	border-top: 1px solid #ccc;
+}
+.setting .setting_item .item_options {
+	flex-grow: 1;
+	padding: 0 8px;
+}
+.item_options a{
+    font-size: 1.4vw;
+    color: white;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.back i{
+    font-size: 2vw;
+    font-size: 3vw;
+    margin-top: 3vw;
+}
+a{
+    font-size: 2vw;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.381);
+}
+a:hover{
+    color: #FF3F6C;
+}
+/* .back a i{
+    font-size: 3vw;
+   margin-top: 3vw;
+} */
